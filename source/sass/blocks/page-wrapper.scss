@@ -1,0 +1,10 @@
+.page-wrapper {
+  padding-left: $mobilePadding;
+  padding-right: $mobilePadding;
+  margin: 0 auto;
+
+  @media (min-width: $tabletWidth) {
+    padding-left: $tabletPadding;
+    padding-right: $tabletPadding;
+  }
+}
