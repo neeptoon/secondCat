@@ -1,5 +1,7 @@
 body {
   margin: 0 auto;
+  min-width: 320px;
+  outline: 1px solid red;
 
   font-family: $mainFont;
   font-size: $mainFontSize;
@@ -8,11 +10,10 @@ body {
   color: $mainFontColor;
   // перенос слов
   word-break: break-all;
-
-  // overflow: hidden;
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -21,28 +22,22 @@ img {
   height: auto;
 }
 
-/* body > * {
-  outline: 2px solid tomato;
+// body > * {
+//   outline: 2px solid tomato;
+// }
 
+// body > * > * {
+//   outline: 2px dashed mediumseagreen;
+// }
 
-}
+// body > * > * > * {
+//   outline: 2px dotted darkslateblue;
+// }
 
-body > * > * {
-  outline: 2px dashed mediumseagreen;
+// body > * > * > * > * {
+//   outline: 2px dotted darkorange;
+// }
 
-
-}
-
-body > * > * > * {
-  outline: 2px dotted darkslateblue;
-}
-
-body > * > * > * > * {
-  outline: 2px dotted darkorange;
-
-}
-
-body > * > * > * > * > * {
-  outline: 2px dotted teal;
-}
-*/
+// body > * > * > * > * > * {
+//   outline: 2px dotted teal;
+// }

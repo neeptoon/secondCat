@@ -4,6 +4,7 @@
   margin: 0 auto;
 
   @media (min-width: $tabletWidth) {
+    position: relative;
     padding-left: $tabletPadding;
     padding-right: $tabletPadding;
   }
