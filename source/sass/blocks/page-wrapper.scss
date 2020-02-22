@@ -2,6 +2,7 @@
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
   margin: 0 auto;
+  overflow: hidden;
 
   @media (min-width: $tabletWidth) {
     position: relative;

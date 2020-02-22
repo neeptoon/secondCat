@@ -1,0 +1,41 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+
+  background: url("../img/index-can-mobile@1x.png"),
+    url("../img/index-background-mobile@1x.jpg"),
+    linear-gradient(180deg, $primary-color 64%, $default-color 64%);
+  background-repeat: no-repeat;
+  background-position: center 165px, center 0px, center;
+  // background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/index-can-mobile@2x.png"),
+      url("../img/index-background-mobile@2x.jpg"),
+      linear-gradient(180deg, $primary-color 64%, $default-color 64%);
+    background-position: center 165px, center 0px, center;
+    background-repeat: no-repeat;
+    background-size: 280px auto, 320px auto, contain;
+  }
+}
+
+.intro__desc {
+  margin: 0 0 25px;
+  max-width: 480px;
+
+  font-size: 36px;
+  line-height: 36px;
+  color: $default-color;
+  text-align: center;
+}
+
+.intro__slogan {
+  margin: 0 0 305px;
+
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $default-color;
+}
