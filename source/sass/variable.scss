@@ -24,24 +24,13 @@ $tabletPadding: 30px;
 
 // Main color
 $line-color: #e6e6e6;
-
 $main-color: #000000;
 $default-color: #ffffff;
-$primary-color: #444ce0;
-$success-color: #26de81;
-$danger-color: #fc5c65;
-$warning-color: #fed330;
-$light-color: #999999;
-$purple-color: #8854d0;
+$primary-color: #63a73a;
+$primary-button-color: #68b738;
+$primary-button-color-hover: #5eaa2f;
+$primary-button-textcolor-hover: #8fc46e;
 
-// Neutral Color
-$neutral-primary: #303133;
-$neutral-regular: #606266;
-$neutral-secondary: #909399;
-$neutral-placeholder: #c0c4cc;
-
-// Border Color
-$border-base: #dcdfe6;
-$border-light: #e4e7ed;
-$border-lighter: #ebeef5;
-$border-lightex: #f2f6fc;
+// retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $default-color;
+  text-align: center;
+
+  background-color: $primary-button-color;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-button-color-hover;
+  }
+
+  &:active {
+    color: $primary-button-textcolor-hover;
+  }
+}
