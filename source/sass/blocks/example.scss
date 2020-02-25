@@ -1,0 +1,142 @@
+.example {
+  padding-top: 15px;
+  background-color: $second-color;
+}
+
+.example__heading {
+  margin: 0 0 25px;
+
+  font-size: 34px;
+  line-height: 60px;
+}
+
+.example__desc {
+  margin: 0 0 25px;
+
+  font-family: "Arial", serif;
+  line-height: 18px;
+}
+
+.example__value {
+  margin: auto;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__field {
+  position: absolute;
+  top: 47px;
+  left: 20px;
+
+  margin: 0;
+  padding: 0 10px;
+  width: 65px;
+
+  font-family: "Arial", serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+
+  background-color: $second-color;
+}
+
+.example__results-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 auto 32px;
+  width: 280px;
+  list-style: none;
+}
+
+.example__results-item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding: 13px 10px 20px;
+  width: 102px;
+
+  border: 1px solid $line-color;
+  border-radius: 5px;
+}
+
+.example__costs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.example__costs-field {
+  margin: 0;
+}
+
+.example__costs-value {
+  margin: 0;
+}
+
+.example__img-wrapper {
+  position: relative;
+  /* растягиваем по ширине окна */
+  width: 100vw;
+  /* скрываем всё, что не поместилось в экран */
+  overflow: hidden;
+  /* центрируем обёртку */
+  left: 50%;
+  transform: translate(-50%);
+  /* центрируем картинки */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 27px;
+}
+
+.example__slider img {
+  width: 320px;
+  max-width: none;
+}
+
+.example__button-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 37px;
+  width: 200px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 60px;
+    height: 12px;
+    width: 37%;
+
+    background-color: $default-color;
+    border: 1px solid $line-color;
+    border-radius: 10px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 65px;
+    height: 6px;
+    width: 18%;
+
+    background-color: $primary-color;
+    border-radius: 10px;
+
+    z-index: 5;
+  }
+}
+
+.example__button {
+  padding: 0;
+  font-size: 17px;
+  line-height: 20px;
+  background-color: transparent;
+  border: none;
+}
