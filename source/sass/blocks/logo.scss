@@ -1,3 +1,11 @@
+.logo {
+  display: flex;
+}
+
+.logo--footer {
+  justify-content: center;
+}
+
 .logo__img {
   width: 190px;
 }
@@ -9,6 +17,7 @@
 }
 
 .logo__link {
+  display: block;
   &:hover,
   &:focus {
     opacity: 0.6;
