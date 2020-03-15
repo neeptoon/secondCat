@@ -1,10 +1,4 @@
 .programms {
-  padding-top: 20px;
-}
-
-.programms__list {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -12,10 +6,6 @@
   position: relative;
   padding: 30px 20px 25px;
   background-color: $second-color;
-}
-
-.programms__item:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .programms__name {
