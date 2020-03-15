@@ -1,0 +1,11 @@
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.page-footer__logo {
+  padding: 35px 0 33px;
+
+  border-bottom: 1px solid $line-color;
+}

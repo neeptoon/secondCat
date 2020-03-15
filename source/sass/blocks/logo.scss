@@ -2,6 +2,12 @@
   width: 190px;
 }
 
+.logo__img--footer {
+  display: flex;
+  width: 135px;
+  margin: auto;
+}
+
 .logo__link {
   &:hover,
   &:focus {
