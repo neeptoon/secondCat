@@ -1,0 +1,12 @@
+.plans {
+  padding-top: 20px;
+}
+
+.plans__list {
+  margin: 0;
+  padding: 0;
+}
+
+.plans__item:not(:last-child) {
+  margin-bottom: 20px;
+}
