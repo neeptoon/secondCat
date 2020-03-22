@@ -9,6 +9,8 @@
 }
 
 .socials__icon {
+  fill: $icon-color;
+
   &:hover,
   &:focus {
     fill: $primary-button-color-hover;
