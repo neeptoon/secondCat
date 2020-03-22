@@ -8,6 +8,14 @@
   list-style: none;
 }
 
+.socials__thing a {
+  outline: none;
+}
+
+.socials__thing a:focus > .socials__icon {
+  fill: $primary-button-color-hover;
+}
+
 .socials__icon {
   fill: $icon-color;
 
