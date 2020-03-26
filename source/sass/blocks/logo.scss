@@ -1,5 +1,6 @@
 .logo {
   display: flex;
+  flex-shrink: 0;
 }
 
 .logo--footer {
@@ -8,6 +9,10 @@
 
 .logo__img {
   width: 190px;
+
+  @media (min-width: $tabletWidth) {
+    width: 175px;
+  }
 }
 
 .logo__img--footer {

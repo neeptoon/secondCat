@@ -1,6 +1,10 @@
 .page-header {
   padding-top: 15px;
   overflow: hidden;
+
+  @media (min-width: $tabletWidth) {
+    padding-top: 25px;
+  }
 }
 
 .page-header__logo {
