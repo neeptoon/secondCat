@@ -19,4 +19,11 @@
   &:active {
     color: $primary-button-textcolor-hover;
   }
+
+  @media (min-width: $tabletWidth) {
+    justify-content: start;
+    padding: 16px 27px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

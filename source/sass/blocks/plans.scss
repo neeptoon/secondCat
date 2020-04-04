@@ -1,5 +1,9 @@
 .plans {
   padding-top: 20px;
+
+  @media (min-width: $tabletWidth) {
+    padding-top: 0;
+  }
 }
 
 .plans__list {
@@ -9,4 +13,8 @@
 
 .plans__item:not(:last-child) {
   margin-bottom: 20px;
+
+  @media (min-width: $tabletWidth) {
+    margin-bottom: 30px;
+  }
 }

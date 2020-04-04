@@ -3,7 +3,7 @@
   flex-direction: column;
   padding-top: 25px;
 
-  background: url("../img/index-can-mobile@1x.png"),
+  background-image: url("../img/index-can-mobile@1x.png"),
     url("../img/index-background-mobile@1x.jpg"),
     linear-gradient(180deg, $primary-color 64%, $default-color 64%);
   background-repeat: no-repeat;
@@ -11,12 +11,30 @@
   // background-size: contain;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background: url("../img/index-can-mobile@2x.png"),
+    background-image: url("../img/index-can-mobile@2x.png"),
       url("../img/index-background-mobile@2x.jpg"),
       linear-gradient(180deg, $primary-color 64%, $default-color 64%);
     background-position: center 165px, center 0px, center;
     background-repeat: no-repeat;
     background-size: 280px auto, 320px auto, contain;
+  }
+
+  @media (min-width: $tabletWidth) {
+    padding-top: 45px;
+    padding-bottom: 530px;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    background-position: center 248px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+      background-size: 702px auto;
+    }
+  }
+}
+
+.intro__wrapper {
+  @media (min-width: $tabletWidth) {
+    padding: 0;
   }
 }
 
@@ -28,6 +46,16 @@
   line-height: 36px;
   color: $default-color;
   text-align: center;
+
+  @media (min-width: $tabletWidth) {
+    max-width: 535px;
+    margin: 0 0 35px;
+
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $main-color;
+  }
 }
 
 .intro__slogan {
@@ -38,8 +66,19 @@
   text-transform: uppercase;
   text-align: center;
   color: $default-color;
+
+  @media (min-width: $tabletWidth) {
+    margin: 0 0 50px;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: left;
+    color: $main-color;
+  }
 }
 
 .intro__link {
+  @media (min-width: $tabletWidth) {
+    width: 36%;
+  }
   outline: none;
 }
