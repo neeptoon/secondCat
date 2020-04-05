@@ -19,6 +19,9 @@
 .socials__icon {
   fill: $icon-color;
 
+  width: 25px;
+  height: 20px;
+
   &:hover,
   &:focus {
     fill: $primary-button-color-hover;
@@ -26,5 +29,10 @@
 
   &:active {
     fill: $primary-button-textcolor-hover;
+  }
+
+  @media (min-width: $tabletWidth) {
+    width: 28px;
+    height: 26px;
   }
 }

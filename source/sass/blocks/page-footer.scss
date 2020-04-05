@@ -1,17 +1,41 @@
+.page-footer {
+  background: linear-gradient(
+    180deg,
+    $default-color 0 57%,
+    $second-color 57% 100%
+  );
+}
+
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: end;
+
+  @media (min-width: $tabletWidth) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 60px;
+  }
 }
 
 .page-footer__logo {
   padding: 35px 0 33px;
 
   border-bottom: 1px solid $line-color;
+
+  @media (min-width: $tabletWidth) {
+    padding: 60px 0 0;
+    border: none;
+  }
 }
 
 .page-footer__socials {
   padding: 21px 0 16px;
 
   border-bottom: 1px solid $line-color;
+
+  @media (min-width: $tabletWidth) {
+    padding: 60px 0 0;
+    border: none;
+  }
 }

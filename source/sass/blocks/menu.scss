@@ -1,16 +1,15 @@
 .menu {
-  display: flex;
-
   padding: 0;
   margin: 0;
   list-style: none;
 
   @media (min-width: $phoneWidth) {
-    // display: flex;
+    display: none;
     flex-direction: column;
   }
 
   @media (min-width: $tabletWidth) {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }

@@ -1,5 +1,9 @@
 .copyright {
   padding-top: 20px;
+
+  @media (min-width: $tabletWidth) {
+    padding-top: 53px;
+  }
 }
 
 .copyright__link {
