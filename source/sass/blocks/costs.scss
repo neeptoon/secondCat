@@ -1,0 +1,17 @@
+.costs {
+  margin: 0 0 35px;
+
+  @media (min-width: $tabletWidth) {
+    margin: -2px 0 0;
+  }
+}
+
+.costs__field {
+  @media (min-width: $tabletWidth) {
+    margin: 0 0 9px;
+  }
+}
+
+.costs__value {
+  text-align: right;
+}
