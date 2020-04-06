@@ -5,8 +5,13 @@
   @media (min-width: $tabletWidth) {
     padding-top: 25px;
   }
+
+  @media (min-width: $desktopWidth) {
+    padding-top: 50px;
+  }
 }
 
 .page-header__logo {
   padding-bottom: 10px;
+  background-color: transparent;
 }

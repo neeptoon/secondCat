@@ -9,4 +9,9 @@
     padding-left: $tabletPadding;
     padding-right: $tabletPadding;
   }
+
+  @media (min-width: $desktopWidth) {
+    padding-left: $desktopPadding;
+    padding-right: $desktopPadding;
+  }
 }

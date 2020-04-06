@@ -30,11 +30,26 @@
       background-size: 702px auto;
     }
   }
+
+  @media (min-width: $desktopWidth) {
+    margin-top: -125px;
+    padding-bottom: 170px;
+
+    background-image: url("../img/index-can-desktop@1x.png"),
+      url("../img/index-background-desktop@1x.jpg");
+    background-size: 505px auto, 650px auto;
+    background-position: 500px 130px, 650px 10px;
+  }
 }
 
 .intro__wrapper {
   @media (min-width: $tabletWidth) {
     padding: 0;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding: 160px 0 0;
+    margin: 0 170px;
   }
 }
 
@@ -56,6 +71,13 @@
     text-align: left;
     color: $main-color;
   }
+
+  @media (min-width: $desktopWidth) {
+    width: 375px;
+
+    font-size: 54px;
+    line-height: 60px;
+  }
 }
 
 .intro__slogan {
@@ -69,16 +91,42 @@
 
   @media (min-width: $tabletWidth) {
     margin: 0 0 50px;
+
     font-size: 20px;
     line-height: 1.2;
     text-align: left;
     color: $main-color;
   }
+
+  @media (min-width: $desktopWidth) {
+    margin: 0 0 40px;
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 
 .intro__link {
+  padding: 10px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $default-color;
+
   @media (min-width: $tabletWidth) {
     width: 36%;
+    padding: 16px 27px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: 192px;
+    padding: 14px 16px;
+
+    font-size: 20px;
+    text-align: center;
   }
   outline: none;
 }

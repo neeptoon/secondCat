@@ -13,6 +13,10 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktopWidth) {
+    color: $default-color;
+  }
 }
 
 .menu__thing {
@@ -79,4 +83,8 @@
   height: 2px;
 
   background-color: $primary-color;
+
+  @media (min-width: $desktopWidth) {
+    background-color: $default-color;
+  }
 }
