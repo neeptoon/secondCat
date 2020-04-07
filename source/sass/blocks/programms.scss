@@ -10,6 +10,10 @@
   @media (min-width: $tabletWidth) {
     padding: 75px 55px 65px;
   }
+
+  @media (min-width: $desktopWidth) {
+    padding: 70px 35px 60px;
+  }
 }
 
 .programms__name {
@@ -24,6 +28,12 @@
     margin: 0 0 25px;
 
     font-size: 34px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-left: 145px;
+    margin: 0 0 60px;
+    font-size: 31px;
   }
 }
 
@@ -47,6 +57,14 @@
     width: 205px;
     height: 205px;
     background-size: cover;
+  }
+
+  @media (min-width: $desktopWidth) {
+    top: 40px;
+    left: 35px;
+
+    width: 95px;
+    height: 95px;
   }
 }
 
@@ -103,6 +121,13 @@
       height: 0;
     }
   }
+
+  @media (min-width: $desktopWidth) {
+    width: 430px;
+    margin: 0 0 25px;
+
+    font-size: 14px;
+  }
 }
 
 .programms__link {
@@ -149,5 +174,9 @@
 
   @media (min-width: $tabletWidth) {
     font-size: 20px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    font-size: 18px;
   }
 }
