@@ -1,11 +1,16 @@
 .desc {
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding: 10px 0 20px;
 
   @media (min-width: $tabletWidth) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0 40px;
+
     border-bottom: 1px solid $line-color;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding: 65px 0 0;
+
+    border: none;
   }
 }
 
@@ -16,8 +21,15 @@
   line-height: 60px;
 
   @media (min-width: $tabletWidth) {
-    font-size: 56px;
     margin: 0 0 75px;
+
+    font-size: 56px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin: 0 0 60px;
+
+    font-size: 50px;
   }
 }
 
@@ -35,12 +47,12 @@
     align-content: space-between;
     min-height: 560px;
   }
+
+  @media (min-width: $desktopWidth) {
+    min-height: auto;
+  }
 }
 
 .desc__step {
   margin-bottom: 20px;
-
-  // @media (min-width: $tabletWidth) {
-  //   margin-bottom: 90px;
-  // }
 }

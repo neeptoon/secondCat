@@ -14,8 +14,9 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $tabletWidth) {
+  @media (min-width: $desktopWidth) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -24,5 +25,9 @@
 
   @media (min-width: $tabletWidth) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin: 0;
   }
 }

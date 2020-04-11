@@ -38,7 +38,7 @@
     background-image: url("../img/index-can-desktop@1x.png"),
       url("../img/index-background-desktop@1x.jpg");
     background-size: 505px auto, 650px auto;
-    background-position: 500px 130px, 650px 10px;
+    background-position: 500px 130px, 643px 10px;
   }
 }
 
@@ -50,6 +50,7 @@
   @media (min-width: $desktopWidth) {
     padding: 160px 0 0;
     margin: 0 170px;
+    overflow: hidden;
   }
 }
 

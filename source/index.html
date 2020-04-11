@@ -9,7 +9,7 @@
 
   <body>
     <!-- Вставка спрайта -->
-    <div style="display:none">
+    <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
 
@@ -133,58 +133,64 @@
       <section class="example">
         <div class="page-wrapper">
           <h2 class="example__heading">Живой пример</h2>
-          <p class="example__desc">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-            этом он не менял своих привычет и по-прежнему спит по 16 часов в
-            день.
-          </p>
-          <div class="example__tablet-wrapper">
-            <ul class="example__results-list">
-              <li class="example__results-item">
-                <p class="example__value">5 КГ</p>
-                <p class="example__field">снижение веса</p>
-              </li>
-              <li class="example__results-item">
-                <p class="example__value">60 ДНЕЙ</p>
-                <p class="example__field">затрачено времени</p>
-              </li>
-            </ul>
-            <div class="example__costs costs">
-              <p class="example__costs-field costs__field">
-                ЗАТРАТЫ НА ПИТАНИЕ:
+          <div class="example__desktop-wrapper">
+            <div class="example__wrapper">
+              <p class="example__desc">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+                на Cat Energy Slim. Отличный результат без изнуряющих
+                тренировок! При этом он не менял своих привычет и по-прежнему
+                спит по 16 часов в день.
               </p>
-              <p class="example__costs-value costs__value">15 000 РУБ.</p>
+              <div class="example__tablet-wrapper">
+                <ul class="example__results-list">
+                  <li class="example__results-item">
+                    <p class="example__value">5 КГ</p>
+                    <p class="example__field">снижение веса</p>
+                  </li>
+                  <li class="example__results-item">
+                    <p class="example__value">60 ДНЕЙ</p>
+                    <p class="example__field">затрачено времени</p>
+                  </li>
+                </ul>
+                <div class="example__costs costs">
+                  <p class="example__costs-field costs__field">
+                    ЗАТРАТЫ НА ПИТАНИЕ:
+                  </p>
+                  <p class="example__costs-value costs__value">15 000 РУБ.</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="example__slider">
-            <div class="example__img-wrapper">
-              <picture>
-                <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="" /> -->
-                <source
-                  media="(min-width: 1300px)"
-                  srcset="
-                    img/before-desktop@2x.png 2x,
-                    img/before-desktop@1x.png 1x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/before-tablet@2x.png 2x,
-                    img/before-tablet@1x.png 1x
-                  "
-                />
-                <img
-                  src="img/before-mobile@1x.png"
-                  srcset="img/before-mobile@2x.png 2x"
-                  alt="Кот до приема специальных препаратов"
-                />
-              </picture>
-            </div>
-            <div class="example__button-wrapper">
-              <button class="example__button" type="button">БЫЛО</button>
-              <button class="example__button" type="button">СТАЛО</button>
+            <div class="example__slider-wrapper">
+              <div class="example__slider">
+                <div class="example__img-wrapper">
+                  <picture>
+                    <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="" /> -->
+                    <source
+                      media="(min-width: 1300px)"
+                      srcset="
+                        img/before-desktop@2x.png 2x,
+                        img/before-desktop@1x.png 1x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/before-tablet@2x.png 2x,
+                        img/before-tablet@1x.png 1x
+                      "
+                    />
+                    <img
+                      src="img/before-mobile@1x.png"
+                      srcset="img/before-mobile@2x.png 2x"
+                      alt="Кот до приема специальных препаратов"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div class="example__button-wrapper">
+                <button class="example__button" type="button">БЫЛО</button>
+                <button class="example__button" type="button">СТАЛО</button>
+              </div>
             </div>
           </div>
         </div>
