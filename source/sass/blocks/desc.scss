@@ -1,0 +1,58 @@
+.desc {
+  padding: 10px 0 20px;
+
+  @media (min-width: $tabletWidth) {
+    padding: 40px 0 40px;
+
+    border-bottom: 1px solid $line-color;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding: 65px 0 0;
+
+    border: none;
+  }
+}
+
+.desc__heading {
+  margin: 0 0 30px;
+
+  font-size: 34px;
+  line-height: 60px;
+
+  @media (min-width: $tabletWidth) {
+    margin: 0 0 75px;
+
+    font-size: 56px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin: 0 0 60px;
+
+    font-size: 50px;
+  }
+}
+
+.desc__steps-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tabletWidth) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    min-height: 560px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    min-height: auto;
+  }
+}
+
+.desc__step {
+  margin-bottom: 20px;
+}

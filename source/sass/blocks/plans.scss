@@ -1,0 +1,33 @@
+.plans {
+  padding-top: 20px;
+
+  @media (min-width: $tabletWidth) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-top: 70px;
+  }
+}
+
+.plans__list {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktopWidth) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.plans__item:not(:last-child) {
+  margin-bottom: 20px;
+
+  @media (min-width: $tabletWidth) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    margin: 0;
+  }
+}

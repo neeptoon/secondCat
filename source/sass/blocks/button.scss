@@ -1,0 +1,24 @@
+.button {
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+
+  background-color: $primary-button-color;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-button-color-hover;
+  }
+
+  &:active {
+    color: $primary-button-textcolor-hover;
+  }
+
+  @media (min-width: $tabletWidth) {
+    justify-content: start;
+  }
+
+  @media (min-width: ) {
+  }
+}

@@ -1,0 +1,120 @@
+.steps {
+  counter-reset: currentCounter;
+}
+
+.steps__thing {
+  position: relative;
+
+  padding-left: 80px;
+  min-height: 60px;
+
+  font-family: "Arial", serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $primary-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+
+    @media (min-width: $tabletWidth) {
+      width: 80px;
+      height: 80px;
+    }
+
+    @media (min-width: $desktopWidth) {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &:nth-child(1)::after {
+    background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
+  }
+
+  &:nth-child(2)::after {
+    background-image: url("../img/advantage-powder@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
+  }
+
+  &:nth-child(3)::after {
+    background-image: url("../img/advantage-dining@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
+  }
+
+  &:nth-child(4)::after {
+    background-image: url("../img/advantage-clock@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
+  }
+
+  @media (min-width: $tabletWidth) {
+    width: 325px;
+    padding: 110px 0 45px;
+
+    &::before {
+      counter-increment: currentCounter;
+      content: counter(currentCounter);
+
+      position: absolute;
+      top: 92px;
+      left: 110px;
+      height: 100%;
+
+      font-family: "Oswald", "Arial", serif;
+      font-size: 281px;
+      opacity: 0.2;
+    }
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: 225px;
+
+    padding: 100px 0 40px;
+
+    &::before {
+      top: 82px;
+      left: 105px;
+
+      font-size: 250px;
+    }
+  }
+}
+
+.steps__content {
+  @media (min-width: $tabletWidth) {
+    display: block;
+    width: 76%;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: auto;
+
+    font-size: 14px;
+  }
+}

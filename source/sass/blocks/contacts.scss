@@ -1,0 +1,113 @@
+.contacts__map {
+  position: relative;
+  /* растягиваем по ширине окна */
+  width: 100vw;
+  /* центрируем */
+  left: 50%;
+  transform: translate(-50%);
+
+  height: 360px;
+  border: none;
+  background-image: url("../img/map-pin.png"),
+    url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 50px 50px, contain;
+  background-position: center, center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-mobile@2x.png");
+  }
+
+  @media (min-width: $tabletWidth) {
+    height: 390px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    height: 360px;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 25px;
+  margin: 0;
+
+  list-style: none;
+
+  @media (min-width: $tabletWidth) {
+    padding: 65px 40px 60px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    position: absolute;
+    left: 100px;
+    top: 85px;
+    padding: 58px 70px 50px;
+    width: 370px;
+
+    background-color: $default-color;
+    z-index: 2;
+  }
+}
+
+.contacts__slogan {
+  width: 45%;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tabletWidth) {
+    width: 37%;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: 145px;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.contacts__break-tablet {
+  display: none;
+
+  @media (min-width: $tabletWidth) {
+    display: block;
+  }
+}
+
+.contacts__break-desktop {
+  display: none;
+
+  @media (min-width: $desktopWidth) {
+    display: block;
+  }
+}
+
+.contacts__address {
+  width: 50%;
+  font-family: "Arial", serif;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tabletWidth) {
+    width: 25%;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: 145px;
+
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+  }
+}

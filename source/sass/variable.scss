@@ -11,11 +11,12 @@ $mainFontWeight: 400;
 $mainLineHeight: 18px;
 
 $desktopWidth: 1300px;
-$tabletWidth: 968px;
+$tabletWidth: 768px;
 $phoneWidth: 320px;
 
 $mobilePadding: 20px;
 $tabletPadding: 30px;
+$desktopPadding: 100px;
 
 /*
  All colors taken from:
@@ -23,22 +24,16 @@ $tabletPadding: 30px;
 */
 
 // Main color
+$line-color: #d9d9d9;
+$icon-color: #444;
+$main-color: #000000;
 $default-color: #ffffff;
-$primary-color: #444ce0;
-$success-color: #26de81;
-$danger-color: #fc5c65;
-$warning-color: #fed330;
-$light-color: #999999;
-$purple-color: #8854d0;
+$primary-color: #63a73a;
+$second-color: #f2f2f2;
+$primary-button-color: #68b738;
+$primary-button-color-hover: #5eaa2f;
+$primary-button-textcolor-hover: #8fc46e;
 
-// Neutral Color
-$neutral-primary: #303133;
-$neutral-regular: #606266;
-$neutral-secondary: #909399;
-$neutral-placeholder: #c0c4cc;
-
-// Border Color
-$border-base: #dcdfe6;
-$border-light: #e4e7ed;
-$border-lighter: #ebeef5;
-$border-lightex: #f2f6fc;
+// retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

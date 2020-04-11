@@ -2,9 +2,16 @@
   padding-left: $mobilePadding;
   padding-right: $mobilePadding;
   margin: 0 auto;
+  overflow: hidden;
 
   @media (min-width: $tabletWidth) {
+    position: relative;
     padding-left: $tabletPadding;
     padding-right: $tabletPadding;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-left: $desktopPadding;
+    padding-right: $desktopPadding;
   }
 }

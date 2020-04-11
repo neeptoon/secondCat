@@ -1,0 +1,6 @@
+.tablet-wrapper {
+  @media (min-width: $tabletWidth) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

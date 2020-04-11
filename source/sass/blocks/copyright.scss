@@ -1,0 +1,53 @@
+.copyright {
+  padding-top: 20px;
+
+  @media (min-width: $tabletWidth) {
+    padding-top: 53px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-top: 50px;
+  }
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  cursor: default;
+}
+
+.copyright__write {
+  margin: 0;
+  padding-top: 8px;
+  font-family: "Arial", serif;
+  font-size: 16px;
+  line-height: 1.2;
+
+  @media (min-width: $desktopWidth) {
+    font-size: 14px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.copyright__link svg {
+  fill: $icon-color;
+
+  &:hover,
+  &:focus {
+    fill: $primary-button-color-hover;
+    cursor: pointer;
+  }
+
+  &:active {
+    fill: $primary-button-textcolor-hover;
+  }
+}
