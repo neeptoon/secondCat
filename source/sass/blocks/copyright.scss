@@ -4,6 +4,10 @@
   @media (min-width: $tabletWidth) {
     padding-top: 53px;
   }
+
+  @media (min-width: $desktopWidth) {
+    padding-top: 50px;
+  }
 }
 
 .copyright__link {
@@ -18,6 +22,10 @@
   font-family: "Arial", serif;
   font-size: 16px;
   line-height: 1.2;
+
+  @media (min-width: $desktopWidth) {
+    font-size: 14px;
+  }
 
   &:hover,
   &:focus {

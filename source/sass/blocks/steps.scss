@@ -87,6 +87,12 @@
       font-size: 281px;
       opacity: 0.2;
     }
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: 225px;
+
+    padding: 100px 0 40px;
 
     &::before {
       top: 82px;
@@ -94,12 +100,6 @@
 
       font-size: 250px;
     }
-  }
-
-  @media (min-width: $tabletWidth) {
-    width: 225px;
-
-    padding: 100px 0 40px;
   }
 }
 

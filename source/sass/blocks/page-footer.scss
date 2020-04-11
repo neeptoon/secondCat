@@ -16,6 +16,10 @@
     justify-content: space-between;
     padding-bottom: 60px;
   }
+
+  @media (min-width: $desktopWidth) {
+    padding-bottom: 35px;
+  }
 }
 
 .page-footer__logo {
@@ -27,6 +31,10 @@
     padding: 60px 0 0;
     border: none;
   }
+
+  @media (min-width: $desktopWidth) {
+    padding: 55px 0 0;
+  }
 }
 
 .page-footer__socials {
@@ -37,5 +45,9 @@
   @media (min-width: $tabletWidth) {
     padding: 60px 0 0;
     border: none;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding: 55px 0 0;
   }
 }

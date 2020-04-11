@@ -19,6 +19,10 @@
   display: flex;
   width: 135px;
   margin: auto;
+
+  @media (min-width: $desktopWidth) {
+    width: 115px;
+  }
 }
 
 .logo__link {
