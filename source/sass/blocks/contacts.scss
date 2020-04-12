@@ -21,10 +21,27 @@
 
   @media (min-width: $tabletWidth) {
     height: 390px;
+
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-tablet@1x.png");
+    background-size: 50px 50px, cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin.png"),
+        url("../img/bg-map-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktopWidth) {
     height: 360px;
+
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin.png"),
+        url("../img/bg-map-desktop@2x.png");
+    }
   }
 }
 

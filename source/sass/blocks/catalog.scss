@@ -1,0 +1,35 @@
+.catalog__header {
+  position: relative;
+
+  margin: 0;
+  padding: 20px 0 27px;
+
+  font-size: 33px;
+  line-height: 60px;
+
+  @media (max-width: $tabletWidth - 1px) {
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 3px;
+      left: -20px;
+
+      width: 100vw;
+      height: 1px;
+      background-color: $line-color;
+
+      z-index: 2;
+    }
+
+    &::after {
+      top: 107px;
+    }
+  }
+}
+
+.catalog__list {
+  padding: 0;
+  margin: 0;
+}

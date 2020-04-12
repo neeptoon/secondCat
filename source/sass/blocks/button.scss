@@ -6,6 +6,8 @@
 
   background-color: $primary-button-color;
 
+  border: none;
+
   &:hover,
   &:focus {
     background-color: $primary-button-color-hover;
@@ -17,8 +19,5 @@
 
   @media (min-width: $tabletWidth) {
     justify-content: start;
-  }
-
-  @media (min-width: ) {
   }
 }

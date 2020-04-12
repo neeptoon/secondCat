@@ -1,0 +1,80 @@
+.goods {
+  list-style: none;
+}
+
+.goods__item {
+  position: relative;
+  padding-bottom: 25px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    bottom: 0px;
+    left: -20px;
+
+    background-color: $line-color;
+  }
+}
+
+.goods__link {
+  display: flex;
+
+  &:hover {
+    cursor: default;
+  }
+}
+
+.goods__img {
+  display: block;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.goods__heading {
+  margin: 0;
+  padding-top: 22px;
+
+  width: 80px;
+
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.goods__table {
+  position: absolute;
+  left: 137px;
+  top: 72px;
+  width: 147px;
+
+  font-family: "Arial", serif;
+  font-size: 12px;
+  line-height: 13px;
+}
+
+.goods__field {
+  text-align: left;
+}
+
+.goods__value {
+  text-align: right;
+}
+
+.goods__button {
+  width: 100%;
+  padding: 10px 15px 10px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: $default-color;
+  text-transform: uppercase;
+}

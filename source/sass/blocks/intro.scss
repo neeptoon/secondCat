@@ -36,9 +36,17 @@
     padding-bottom: 170px;
 
     background-image: url("../img/index-can-desktop@1x.png"),
-      url("../img/index-background-desktop@1x.jpg");
-    background-size: 505px auto, 650px auto;
-    background-position: 500px 130px, 643px 10px;
+      url("../img/index-background-desktop@1x.jpg"),
+      linear-gradient(270deg, $primary-color 0 100%);
+
+    background-size: 505px auto, 650px auto, 53% 640px;
+    background-position: 500px 130px, 643px 10px, 106% 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-can-desktop@2x.png"),
+        url("../img/index-background-desktop@2x.jpg"),
+        linear-gradient(270deg, $primary-color 0 100%);
+    }
   }
 }
 
