@@ -1,0 +1,26 @@
+.special-offer {
+  padding: 187px 10px 42px;
+
+  background-color: $primary-color;
+  background-image: url("../img/icon-gift.svg"),
+    url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 65px, center;
+  background-size: 60px 60px, cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/icon-gift.svg"),
+      url("../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
+.special-offer__call {
+  margin: 0 auto;
+  width: 147px;
+
+  font-family: "Arial", serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $default-color;
+  text-align: center;
+}

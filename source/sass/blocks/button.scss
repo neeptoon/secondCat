@@ -8,6 +8,8 @@
 
   border: none;
 
+  box-sizing: border-box;
+
   &:hover,
   &:focus {
     background-color: $primary-button-color-hover;

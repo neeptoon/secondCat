@@ -1,0 +1,50 @@
+.empty {
+  padding: 80px 0 25px;
+}
+
+.empty__intro {
+  position: relative;
+  margin: 0 0 10px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 125px;
+    width: 30px;
+    height: 3px;
+
+    background-color: $line-color;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+  }
+}
+
+.empty__sentence {
+  margin: 0 0 20px;
+
+  font-family: "Arial", serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $icon-color;
+  text-align: center;
+}
+
+.empty__button {
+  width: 100%;
+  padding: 10px;
+
+  font-size: 16px;
+  color: $icon-color;
+  text-transform: uppercase;
+
+  background-color: $second-color;
+}

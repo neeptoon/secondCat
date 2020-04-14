@@ -1,0 +1,60 @@
+.offer {
+  position: relative;
+
+  list-style: none;
+  padding: 0;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: -18px;
+    width: 100%;
+    height: 1px;
+    background-color: $line-color;
+  }
+}
+
+.offer__heading {
+  margin: 0 0 10px;
+  font-size: 15px;
+
+  text-transform: uppercase;
+}
+
+.offer__item {
+  position: relative;
+  padding: 13px 0 0;
+  margin: 0 0 17px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $line-color;
+  }
+}
+
+.offer__table {
+  margin: 0 0 15px;
+  width: 100%;
+
+  font-family: "Arial", serif;
+  font-size: 14px;
+  line-height: 14px;
+
+  border-collapse: collapse;
+}
+
+.offer__field {
+  padding-left: 0;
+  text-align: left;
+}
+
+.offer__value {
+  padding-left: 0;
+  text-align: right;
+}
