@@ -1,5 +1,24 @@
 .empty {
+  position: relative;
   padding: 80px 0 25px;
+
+  @media (min-width: $tabletWidth) {
+    padding: 245px 37px 20px;
+
+    background: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+
+      left: 1px;
+      top: 80px;
+      width: 324px;
+      height: 430px;
+
+      outline: 1px solid $line-color;
+    }
+  }
 }
 
 .empty__intro {
@@ -26,6 +45,21 @@
   &::before {
     transform: rotate(90deg);
   }
+
+  @media (min-width: $tabletWidth) {
+    width: 150px;
+    margin: 0 auto 27px;
+
+    font-size: 20px;
+    text-align: center;
+
+    &::after,
+    &::before {
+      width: 60px;
+      left: 45px;
+      top: -85px;
+    }
+  }
 }
 
 .empty__sentence {
@@ -36,6 +70,16 @@
   line-height: 16px;
   color: $icon-color;
   text-align: center;
+
+  @media (min-width: $tabletWidth) {
+    width: 250px;
+    margin: 0 auto 90px;
+    padding: 0 12px;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
 .empty__button {
@@ -45,6 +89,7 @@
   font-size: 16px;
   color: $icon-color;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: $second-color;
 }

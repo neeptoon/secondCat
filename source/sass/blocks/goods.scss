@@ -2,9 +2,15 @@
   list-style: none;
 }
 
+.goods__wrapper {
+  @media (min-width: $tabletWidth) {
+    padding: 0 40px;
+  }
+}
+
 .goods__item {
   position: relative;
-  padding-bottom: 25px;
+  padding: 0 0 25px;
 
   &::after {
     content: "";
@@ -17,6 +23,25 @@
 
     background-color: $line-color;
   }
+
+  @media (min-width: $tabletWidth) {
+    padding: 0 0 40px;
+    margin: 0 0 60px;
+
+    background-image: linear-gradient(
+      180deg,
+      transparent 0 15%,
+      $second-color 15% 100%
+    );
+
+    &:nth-child(2n + 1) {
+      padding: 33px 0 40px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .goods__link {
@@ -25,6 +50,13 @@
   &:hover {
     cursor: default;
   }
+
+  @media (min-width: $tabletWidth) {
+    margin: 0 0 23px;
+
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .goods__img {
@@ -32,6 +64,10 @@
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media (min-width: $tabletWidth) {
+    margin: 0 0 35px;
   }
 }
 
@@ -48,6 +84,15 @@
   &:hover {
     cursor: pointer;
   }
+
+  @media (min-width: $tabletWidth) {
+    width: 150px;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
 
 .goods__table {
@@ -59,6 +104,27 @@
   font-family: "Arial", serif;
   font-size: 12px;
   line-height: 13px;
+  color: $icon-color;
+
+  @media (min-width: $tabletWidth) {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 0 33px;
+
+    font-size: 16px;
+    line-height: 16px;
+
+    border-collapse: collapse;
+  }
+}
+
+.goods__table td {
+  @media (min-width: $tabletWidth) {
+    border-bottom: 1px solid $line-color;
+    padding: 7px 0;
+  }
 }
 
 .goods__field {
