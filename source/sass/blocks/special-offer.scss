@@ -12,6 +12,16 @@
     background-image: url("../img/icon-gift.svg"),
       url("../img/gift-photo-mobile@2x.jpg");
   }
+
+  @media (min-width: $tabletWidth) {
+    display: flex;
+    padding: 75px 40px 70px;
+
+    background-image: url("../img/icon-gift.svg"),
+      url("../img/gift-photo-tablet@1x.jpg");
+    background-position: 90px 65px, center;
+    background-size: 60px 60px, cover;
+  }
 }
 
 .special-offer__call {
@@ -23,4 +33,9 @@
   line-height: 20px;
   color: $default-color;
   text-align: center;
+
+  @media (min-width: $tabletWidth) {
+    margin: 0 100px 0 auto;
+    text-align: left;
+  }
 }

@@ -13,6 +13,12 @@
     height: 1px;
     background-color: $line-color;
   }
+
+  @media (min-width: $tabletWidth) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .offer__heading {
@@ -20,6 +26,12 @@
   font-size: 15px;
 
   text-transform: uppercase;
+
+  @media (min-width: $tabletWidth) {
+    margin: 0;
+
+    font-size: 19px;
+  }
 }
 
 .offer__item {
@@ -36,6 +48,33 @@
     height: 1px;
     background-color: $line-color;
   }
+
+  @media (min-width: $tabletWidth) {
+    padding: 27px 0 0;
+    margin: 0 0 1px;
+
+    outline: 1px solid $line-color;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.offer__wrapper {
+  @media (min-width: $tabletWidth) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.offer__half-width {
+  @media (min-width: $tabletWidth) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 37px;
+    margin: 0 0 26px;
+  }
 }
 
 .offer__table {
@@ -47,14 +86,31 @@
   line-height: 14px;
 
   border-collapse: collapse;
+
+  @media (min-width: $tabletWidth) {
+    margin: 0;
+    width: 225px;
+
+    font-size: 16px;
+  }
 }
 
 .offer__field {
   padding-left: 0;
   text-align: left;
+
+  @media (min-width: $tabletWidth) {
+    padding-top: 5px;
+    width: 132px;
+    text-align: right;
+  }
 }
 
 .offer__value {
   padding-left: 0;
   text-align: right;
+
+  @media (min-width: $tabletWidth) {
+    padding-top: 5px;
+  }
 }

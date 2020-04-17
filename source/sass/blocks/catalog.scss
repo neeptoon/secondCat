@@ -1,3 +1,9 @@
+.catalog {
+  @media (min-width: $tabletWidth) {
+    margin: 0 0 3px;
+  }
+}
+
 .catalog__header {
   position: relative;
 

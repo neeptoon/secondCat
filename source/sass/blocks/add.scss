@@ -17,6 +17,18 @@
       $primary-color 77% 100%
     );
   }
+
+  @media (min-width: $tabletWidth) {
+    padding: 0;
+    margin: 0 0 75px;
+
+    &::before {
+      top: 23px;
+      left: -30px;
+
+      background-image: linear-gradient(90deg, $primary-color 0 100%);
+    }
+  }
 }
 
 .add__header {
@@ -24,10 +36,26 @@
 
   font-size: 22px;
   line-height: 24px;
+
+  @media (min-width: $tabletWidth) {
+    position: relative;
+    width: 375px;
+    padding-left: 37px;
+    margin: 0 0 80px;
+
+    font-size: 34px;
+    line-height: 37px;
+
+    background-color: white;
+  }
 }
 
 .add__list {
   margin: 0 0 57px;
+
+  @media (min-width: $tabletWidth) {
+    margin: 0 0 65px;
+  }
 }
 
 .add__special {
