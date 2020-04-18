@@ -1,5 +1,15 @@
 .steps {
   counter-reset: currentCounter;
+
+  @media (max-width: $tabletWidth - 1px) {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+}
+
+.steps__content {
+  display: block;
+  max-width: 320px;
 }
 
 .steps__thing {
@@ -71,7 +81,7 @@
   }
 
   @media (min-width: $tabletWidth) {
-    width: 325px;
+    width: 46%;
     padding: 110px 0 45px;
 
     &::before {
