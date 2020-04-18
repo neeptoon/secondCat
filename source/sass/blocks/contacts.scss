@@ -21,10 +21,27 @@
 
   @media (min-width: $tabletWidth) {
     height: 390px;
+
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-tablet@1x.png");
+    background-size: 50px 50px, cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin.png"),
+        url("../img/bg-map-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktopWidth) {
     height: 360px;
+
+    background-image: url("../img/map-pin.png"),
+      url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/map-pin.png"),
+        url("../img/bg-map-desktop@2x.png");
+    }
   }
 }
 
@@ -54,6 +71,7 @@
 
 .contacts__slogan {
   width: 45%;
+  max-width: 180px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -91,6 +109,7 @@
 
 .contacts__address {
   width: 50%;
+  max-width: 150px;
   font-family: "Arial", serif;
   font-size: 14px;
   line-height: 20px;

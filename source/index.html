@@ -164,7 +164,14 @@
               <div class="example__slider">
                 <div class="example__img-wrapper">
                   <picture>
-                    <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="" /> -->
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1300px)"
+                      srcset="
+                        img/before-desktop@2x.webp 2x,
+                        img/before-desktop@1x.webp 1x
+                      "
+                    />
                     <source
                       media="(min-width: 1300px)"
                       srcset="
@@ -173,10 +180,25 @@
                       "
                     />
                     <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        img/before-tablet@2x.webp 2x,
+                        img/before-tablet@1x.webp 1x
+                      "
+                    />
+                    <source
                       media="(min-width: 768px)"
                       srcset="
                         img/before-tablet@2x.png 2x,
                         img/before-tablet@1x.png 1x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/before-mobile@2x.webp 2x,
+                        img/before-mobile@1x.webp 1x
                       "
                     />
                     <img
@@ -269,6 +291,7 @@
 
           <!-- Копирайт -->
           <section class="copyright">
+            <h2 class="visually-hidden">Копирайт</h2>
             <a
               class="copyright__link"
               href="https://up.htmlacademy.ru/adaptive"
