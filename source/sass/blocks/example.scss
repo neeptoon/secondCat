@@ -60,6 +60,10 @@
   font-family: "Arial", serif;
   line-height: 18px;
 
+  @media (max-width: $tabletWidth - 1px) {
+    max-width: 480px;
+  }
+
   @media (min-width: $tabletWidth) {
     margin: 0 0 60px;
     font-size: 16px;
@@ -150,8 +154,12 @@
   justify-content: space-between;
   padding: 0;
   margin: 0 auto 32px;
-  width: 280px;
+  width: 100%;
   list-style: none;
+
+  @media (max-width: $tabletWidth) {
+    max-width: 400px;
+  }
 
   @media (min-width: $tabletWidth) {
     width: 366px;
@@ -270,13 +278,13 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto 37px;
-  width: 200px;
+  width: 72%;
 
   &::after {
     content: "";
     position: absolute;
     top: 4px;
-    left: 60px;
+    left: 30%;
     height: 12px;
     width: 37%;
 
@@ -289,7 +297,7 @@
     content: "";
     position: absolute;
     top: 8px;
-    left: 65px;
+    left: 33%;
     height: 6px;
     width: 18%;
 
@@ -308,6 +316,7 @@
       width: 440px;
       height: 4px;
       top: 8px;
+      left: 12%;
       background-color: $line-color;
     }
 

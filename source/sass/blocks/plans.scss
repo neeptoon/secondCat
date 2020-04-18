@@ -11,8 +11,8 @@
 }
 
 .plans__list {
-  margin: 0;
   padding: 0;
+  margin: 0;
 
   @media (min-width: $desktopWidth) {
     display: flex;
