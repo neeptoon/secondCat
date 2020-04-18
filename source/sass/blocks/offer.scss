@@ -19,6 +19,10 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktopWidth) {
+    width: 73%;
+  }
 }
 
 .offer__heading {
@@ -32,12 +36,18 @@
 
     font-size: 19px;
   }
+
+  @media (min-width: $desktopWidth) {
+    width: 45%;
+    font-size: 17px;
+  }
 }
 
 .offer__item {
   position: relative;
   padding: 13px 0 0;
-  margin: 0 0 17px;
+  margin: 0 auto 17px;
+  max-width: 500px;
 
   &::before {
     content: "";
@@ -51,7 +61,8 @@
 
   @media (min-width: $tabletWidth) {
     padding: 27px 0 0;
-    margin: 0 0 1px;
+    margin: 0 auto 1px;
+    max-width: 950px;
 
     outline: 1px solid $line-color;
 
@@ -59,12 +70,28 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktopWidth) {
+    padding: 0;
+    outline: none;
+
+    &::before {
+      display: block;
+      top: 63px;
+    }
+
+  }
 }
 
 .offer__wrapper {
   @media (min-width: $tabletWidth) {
     display: flex;
     flex-direction: column;
+  }
+
+  @media (min-width: $desktopWidth) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -74,6 +101,19 @@
     justify-content: space-between;
     padding: 0 37px;
     margin: 0 0 26px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: 27%;
+    margin: 0;
+    padding: 22px 0 13px;
+  }
+}
+
+.offer__half-width--more {
+  @media (min-width: $desktopWidth) {
+
+    width: 69%;
   }
 }
 
@@ -93,6 +133,10 @@
 
     font-size: 16px;
   }
+
+  @media (min-width: $desktopWidth) {
+    width: 48%;
+  }
 }
 
 .offer__field {
@@ -104,6 +148,10 @@
     width: 132px;
     text-align: right;
   }
+
+  @media (min-width: $desktopWidth) {
+    text-align: left;
+  }
 }
 
 .offer__value {
@@ -112,5 +160,11 @@
 
   @media (min-width: $tabletWidth) {
     padding-top: 5px;
+  }
+}
+
+.offer__button {
+  @media (min-width: $desktopWidth) {
+    margin-top: -11px;
   }
 }

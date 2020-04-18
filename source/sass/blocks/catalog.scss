@@ -2,6 +2,10 @@
   @media (min-width: $tabletWidth) {
     margin: 0 0 3px;
   }
+
+  @media (min-width: $desktopWidth) {
+    margin: 0 0 10px;
+  }
 }
 
 .catalog__header {
@@ -39,6 +43,12 @@
     margin: 0 0 85px;
 
     font-size: 56px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding: 52px 0 0;
+    margin: 0 0 70px;
+    font-size: 50px;
   }
 }
 

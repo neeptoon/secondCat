@@ -23,8 +23,8 @@
 .socials__icon {
   fill: $icon-color;
 
-  width: 25px;
-  height: 20px;
+  width: 20px;
+  height: 22px;
 
   &:hover,
   &:focus {
@@ -36,12 +36,12 @@
   }
 
   @media (min-width: $tabletWidth) {
-    width: 28px;
-    height: 26px;
+    width: 24px;
+    height: 24px;
   }
 
   @media (min-width: $desktopWidth) {
-    width: 27px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
   }
 }

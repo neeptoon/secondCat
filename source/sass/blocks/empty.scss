@@ -3,20 +3,31 @@
   padding: 80px 0 25px;
 
   @media (min-width: $tabletWidth) {
-    padding: 245px 37px 20px;
+    padding: 245px 0 20px;
 
     background: none;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
 
       left: 1px;
       top: 80px;
-      width: 324px;
+      width: 100%;
       height: 430px;
 
       outline: 1px solid $line-color;
+    }
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding: 220px 37px 20px;
+    width: 14%;
+
+    &::before {
+      left: 4px;
+      width: 97%;
+      height: 382px;
     }
   }
 }
@@ -35,7 +46,7 @@
     content: "";
     position: absolute;
     top: -40px;
-    left: 125px;
+    left: 45%;
     width: 30px;
     height: 3px;
 
@@ -60,6 +71,17 @@
       top: -85px;
     }
   }
+
+  @media (min-width: $desktopWidth) {
+    font-size: 18px;
+
+    &::after,
+    &::before {
+      width: 60px;
+      left: 45px;
+      top: -70px;
+    }
+  }
 }
 
 .empty__sentence {
@@ -80,11 +102,20 @@
     font-size: 16px;
     text-align: center;
   }
+
+  @media (min-width: $desktopWidth) {
+    width: 150px;
+    padding: 0;
+    margin-bottom: 70px;
+
+    font-size: 14px;
+  }
 }
 
 .empty__button {
   width: 100%;
   padding: 10px;
+  margin: 0 auto;
 
   font-size: 16px;
   color: $icon-color;
@@ -92,4 +123,12 @@
   text-align: center;
 
   background-color: $second-color;
+
+  @media (min-width: $tabletWidth) {
+    width: 75%;
+  }
+
+  @media (min-width: $desktopWidth) {
+    width: 100%;
+  }
 }
