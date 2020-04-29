@@ -99,14 +99,6 @@
   }
 }
 
-.contacts__break-desktop {
-  display: none;
-
-  @media (min-width: $desktopWidth) {
-    display: block;
-  }
-}
-
 .contacts__address {
   width: 50%;
   max-width: 150px;
@@ -116,6 +108,7 @@
 
   @media (min-width: $tabletWidth) {
     width: 25%;
+    max-width: 300px;
 
     font-size: 16px;
     line-height: 20px;

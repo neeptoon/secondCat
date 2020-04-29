@@ -1,12 +1,12 @@
 {
-  "name": "start-project",
+  "name": "cat-energy-19",
   "autor": "I'am",
-  "version": "1.0.0",
+  "version": "17.0.0",
   "private": true,
-  "description": "HTML/CSS/JS",
+  "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "^1.0.0",
-    "autoprefixer": "^9.5.1",
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "^9.7.6",
     "browser-sync": "^2.26.7",
     "del": "^4.1.1",
     "editorconfig": "^0.15.3",
@@ -25,11 +25,12 @@
     "node-sass": "^4.13.1",
     "npx": "^10.2.2",
     "posthtml-include": "^1.3.3",
-    "stylelint": "9.10.x"
+    "stylelint": "10.1.x",
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --fix",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp start"
@@ -41,11 +42,7 @@
   ],
   "editorconfig-cli": [
     "*.json",
-    "*.js",
-    "source/*.html",
-    "source/js/**/*.js",
-    "source/img/**/*.svg",
-    "source/sass/**/*.{sass,scss}"
+    "source/*.html"
   ],
   "engines": {
     "node": ">= 6.0.0",

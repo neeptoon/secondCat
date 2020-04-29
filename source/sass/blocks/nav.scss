@@ -14,7 +14,7 @@
   border: none;
   background-color: transparent;
 
-  &:before {
+  &::before {
     content: "";
 
     position: absolute;

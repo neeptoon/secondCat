@@ -11,11 +11,7 @@
     height: 4px;
     top: 43px;
 
-    background-image: linear-gradient(
-      90deg,
-      transparent 0 20%,
-      $primary-color 20% 100%
-    );
+    background-image: linear-gradient(90deg, transparent 0 20%, $primary-color 20% 100%);
   }
 
   @media (min-width: $tabletWidth) {
@@ -34,12 +30,7 @@
     &::before {
       left: -100px;
 
-      background-image: linear-gradient(
-        90deg,
-        $primary-color 0 63px,
-        $default-color 63px 200px,
-        $primary-color 200px 100%
-      );
+      background-image: linear-gradient(90deg, $primary-color 0 63px, $default-color 63px 200px, $primary-color 200px 100%);
     }
   }
 }

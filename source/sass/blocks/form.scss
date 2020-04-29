@@ -1,0 +1,154 @@
+.form__heading {
+  position: relative;
+  margin: 0 0 40px;
+  padding: 40px 0 0;
+
+  font-size: 34px;
+
+  @media (max-width: $only-phone-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 100vw;
+      height: 1px;
+
+      background-color: $line-color;
+    }
+  }
+}
+
+.form__desc {
+  margin: 0 0 40px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+
+.form__person {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0 0 25px;
+
+  border: none;
+}
+
+.form__label {
+  position: relative;
+  display: flex;
+  margin: 0 0 17px;
+  align-items: baseline;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__label--box {
+  margin: 0;
+  padding: 10px 0 15px 45px;
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.form__person-field {
+  width: 100%;
+  margin-left: 12px;
+  padding: 10px 15px;
+
+  &:hover {
+    outline: 1px solid $line-color;
+  }
+
+  &:focus {
+    outline: 2px solid black;
+  }
+
+  &:invalid {
+    outline: 1px solid red;
+  }
+}
+
+.form__programms {
+  position: relative;
+  padding: 0;
+
+  border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100vw;
+    height: 1px;
+
+    background-color: $line-color;
+  }
+}
+
+.form__programms-field {
+  &:hover+.form__programms-box {
+    position: absolute;
+    top: 12px;
+    left: 7px;
+
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+
+    border-radius: 50%;
+    box-shadow: 0 0 0 9px white,
+      0 0 0 10px rgba(217, 217, 217, 1);
+  }
+
+  &+.form__programms-box {
+    position: absolute;
+    top: 12px;
+    left: 7px;
+
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+
+    border-radius: 50%;
+    box-shadow: 0 0 0 9px white,
+      0 0 0 10px rgba(217, 217, 217, 0.5);
+  }
+
+  &:checked:hover+.form__programms-box {
+    position: absolute;
+    top: 12px;
+    left: 7px;
+
+    width: 12px;
+    height: 12px;
+    background-color: $primary-color;
+
+    border-radius: 50%;
+    box-shadow: 0 0 0 9px white,
+      0 0 0 10px rgba(217, 217, 217, 1);
+  }
+
+  &:checked+.form__programms-box {
+    position: absolute;
+    top: 12px;
+    left: 7px;
+
+    width: 12px;
+    height: 12px;
+    background-color: $primary-color;
+
+    border-radius: 50%;
+    box-shadow: 0 0 0 9px white,
+      0 0 0 10px rgba(217, 217, 217, 0.5);
+  }
+}
