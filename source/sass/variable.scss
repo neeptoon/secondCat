@@ -2,7 +2,9 @@
    ========================================================================== */
 
 // Font
-$mainFont: "Oswald", "Arial", sans-serif;
+$mainFont: "Oswald",
+  "Arial",
+  sans-serif;
 
 // Size
 $mainFontColor: #000000;
@@ -13,10 +15,12 @@ $mainLineHeight: 18px;
 $desktopWidth: 1300px;
 $tabletWidth: 768px;
 $phoneWidth: 320px;
+$only-phone-width: 767px;
 
 $mobilePadding: 20px;
 $tabletPadding: 30px;
 $desktopPadding: 100px;
+
 
 /*
  All colors taken from:
@@ -25,7 +29,7 @@ $desktopPadding: 100px;
 
 // Main color
 $line-color: #d9d9d9;
-$icon-color: #444;
+$icon-color: #444444;
 $main-color: #000000;
 $default-color: #ffffff;
 $primary-color: #63a73a;
