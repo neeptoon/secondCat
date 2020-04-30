@@ -54,7 +54,7 @@
       <!-- Анкета кота -->
       <form name="main-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="form__desc">
-          Заполните анкету и мы подберем программу питания для вашего кота
+          Заполните анкету и мы подберем <br> программу питания для вашего кота
         </p>
         <fieldset class="form__person">
           <label class="form__label">Имя:*<input class="form__person-field" type="text" placeholder="Барсик"
@@ -78,7 +78,7 @@
           <label class="form__label form__label--box">
             <input class="visually-hidden form__programms-field" type="radio" name="programms" />
             <span class="form__programms-box"></span>
-            Не знаю (нужен совет)</label>
+            Не знаю (нужен ваш совет)</label>
         </fieldset>
 
         <!-- Данные владельца кота -->
@@ -102,21 +102,25 @@
         <!-- Дополнительные добавки -->
         <fieldset class="form__add">
           <legend class="form__legend form__legend--add">Дополнительно</legend>
-          <label class="form__label form__label--box"><input class="visually-hidden form__add-field" type="checkbox"
-              checked /><span class="form__add-box"></span>Сахорозаменитель</label>
-          <label class="form__label form__label--box"><input class="visually-hidden form__add-field"
-              type="checkbox" /><span class="form__add-box"></span>Питьевая вода</label>
-          <label class="form__label form__label--box"><input class="visually-hidden form__add-field"
-              type="checkbox" /><span class="form__add-box"></span>Молоко</label>
-          <label class="form__label form__label--box"><input class="visually-hidden form__add-field"
-              type="checkbox" /><span class="form__add-box"></span>Витамины</label>
+          <div class="form__add-wrapper">
+            <label class="form__label form__label--box"><input class="visually-hidden form__add-field" type="checkbox"
+                checked /><span class="form__add-box"></span>Сахарозаменитель</label>
+            <label class="form__label form__label--box"><input class="visually-hidden form__add-field"
+                type="checkbox" /><span class="form__add-box"></span>Питьевая вода</label>
+            <label class="form__label form__label--box"><input class="visually-hidden form__add-field"
+                type="checkbox" /><span class="form__add-box"></span>Молоко</label>
+            <label class="form__label form__label--box"><input class="visually-hidden form__add-field"
+                type="checkbox" /><span class="form__add-box"></span>Витамины</label>
+          </div>
         </fieldset>
 
-        <!-- Отправка формы -->
-        <button class="form__button button" type="submit">Отправить заявку</button>
+        <div class="form__add-wrapper">
+          <!-- Отправка формы -->
+          <button class="form__button button" type="submit">Отправить заявку</button>
 
-        <!-- Дополнительные пояснения -->
-        <p class="form__explain">* &#8212; Обязательные поля</p>
+          <!-- Дополнительные пояснения -->
+          <p class="form__explain">* &#8212; Обязательные поля</p>
+        </div>
       </form>
     </div>
   </main>
