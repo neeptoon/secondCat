@@ -23,12 +23,14 @@
 }
 
 .page-footer__logo {
+  display: block;
   padding: 35px 0 33px;
 
   border-bottom: 1px solid $line-color;
 
   @media (min-width: $tabletWidth) {
     padding: 60px 0 0;
+    margin: 0;
     border: none;
   }
 

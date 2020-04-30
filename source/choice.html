@@ -51,45 +51,51 @@
     <div class="page-wrapper">
       <h1 class="form__heading">Подбор программы</h1>
 
-      <!-- Анкета кота -->
+
       <form name="main-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="form__desc">
           Заполните анкету и мы подберем <br> программу питания для вашего кота
         </p>
-        <fieldset class="form__person">
-          <label class="form__label">Имя:*<input class="form__person-field" type="text" placeholder="Барсик"
-              required /></label>
-          <label class="form__label">Вес&nbsp;(кг):*<input class="form__person-field" type="number" placeholder="7"
-              required /></label>
-          <label class="form__label">Возраст&nbsp;(лет):<input class="form__person-field" type="number"
-              placeholder="7" /></label>
-        </fieldset>
 
-        <!-- Выбор программы -->
-        <fieldset class="form__programms">
-          <label class="form__label form__label--box"><input class="visually-hidden form__programms-field" type="radio"
-              name="programms" checked />
-            <span class="form__programms-box"></span>
-            Похудение</label>
-          <label class="form__label form__label--box">
-            <input class="visually-hidden form__programms-field" type="radio" name="programms" />
-            <span class="form__programms-box"></span>
-            Набор массы</label>
-          <label class="form__label form__label--box">
-            <input class="visually-hidden form__programms-field" type="radio" name="programms" />
-            <span class="form__programms-box"></span>
-            Не знаю (нужен ваш совет)</label>
-        </fieldset>
+        <div class="form__desktop-wrapper">
+          <!-- Анкета кота -->
+          <fieldset class="form__person">
+            <label class="form__label form__label--half-width">Имя:*<input class="form__person-field" type="text"
+                placeholder="Барсик" required /></label>
+            <label class="form__label form__label--half-width">Вес&nbsp;(кг):*<input class="form__person-field"
+                type="number" placeholder="7" required /></label>
+            <label class="form__label form__label--half-width">Возраст&nbsp;(лет):<input class="form__person-field"
+                type="number" placeholder="7" /></label>
+          </fieldset>
+
+          <!-- Выбор программы -->
+          <fieldset class="form__programms">
+            <label class="form__label form__label--half-width form__label--box"><input
+                class="visually-hidden form__programms-field" type="radio" name="programms" checked />
+              <span class="form__programms-box"></span>
+              Похудение</label>
+            <label class="form__label form__label--half-width form__label--box">
+              <input class="visually-hidden form__programms-field" type="radio" name="programms" />
+              <span class="form__programms-box"></span>
+              Набор массы</label>
+            <label class="form__label form__label--half-width form__label--box">
+              <input class="visually-hidden form__programms-field" type="radio" name="programms" />
+              <span class="form__programms-box"></span>
+              Не знаю (нужен ваш совет)</label>
+          </fieldset>
+        </div>
 
         <!-- Данные владельца кота -->
         <fieldset class="form__own">
           <legend class="form__legend">
             Контактные данные (владельца кота)
           </legend>
-          <label class="form__label">e-&nbsp;mail:*<input class="form__own-field form__own-field--email" type="email"
-              placeholder="kuklachev@gmail.com" required /></label>
-          <label class="form__label">Телефон:*<input class="form__own-field form__own-field--tel" type="tel"
-              placeholder="8(960)900-60-90" required /></label>
+          <div class="form__desktop-wrapper">
+            <label class="form__label">e-&nbsp;mail:*<input class="form__own-field form__own-field--email" type="email"
+                placeholder="kuklachev@gmail.com" required /></label>
+            <label class="form__label">Телефон:*<input class="form__own-field form__own-field--tel" type="tel"
+                placeholder="8(960)900-60-90" required /></label>
+          </div>
         </fieldset>
 
         <!-- Комментарии -->
@@ -103,14 +109,18 @@
         <fieldset class="form__add">
           <legend class="form__legend form__legend--add">Дополнительно</legend>
           <div class="form__add-wrapper">
-            <label class="form__label form__label--box"><input class="visually-hidden form__add-field" type="checkbox"
-                checked /><span class="form__add-box"></span>Сахарозаменитель</label>
-            <label class="form__label form__label--box"><input class="visually-hidden form__add-field"
-                type="checkbox" /><span class="form__add-box"></span>Питьевая вода</label>
-            <label class="form__label form__label--box"><input class="visually-hidden form__add-field"
-                type="checkbox" /><span class="form__add-box"></span>Молоко</label>
-            <label class="form__label form__label--box"><input class="visually-hidden form__add-field"
-                type="checkbox" /><span class="form__add-box"></span>Витамины</label>
+            <label class="form__label form__label--fourth-width form__label--box"><input
+                class="visually-hidden form__add-field" type="checkbox" checked /><span
+                class="form__add-box"></span>Сахарозаменитель</label>
+            <label class="form__label form__label--fourth-width form__label--box"><input
+                class="visually-hidden form__add-field" type="checkbox" /><span class="form__add-box"></span>Питьевая
+              вода</label>
+            <label class="form__label form__label--fourth-width form__label--box"><input
+                class="visually-hidden form__add-field" type="checkbox" /><span
+                class="form__add-box"></span>Молоко</label>
+            <label class="form__label form__label--fourth-width form__label--box"><input
+                class="visually-hidden form__add-field" type="checkbox" /><span
+                class="form__add-box"></span>Витамины</label>
           </div>
         </fieldset>
 
