@@ -14,7 +14,8 @@
   background-size: 50px 50px, contain;
   background-position: center, center;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
     background-image: url("../img/map-pin.png"),
       url("../img/bg-map-mobile@2x.png");
   }
@@ -26,7 +27,8 @@
       url("../img/bg-map-tablet@1x.png");
     background-size: 50px 50px, cover;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
       background-image: url("../img/map-pin.png"),
         url("../img/bg-map-tablet@2x.png");
     }
@@ -38,7 +40,8 @@
     background-image: url("../img/map-pin.png"),
       url("../img/bg-map-tablet@1x.png");
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
       background-image: url("../img/map-pin.png"),
         url("../img/bg-map-desktop@2x.png");
     }
@@ -105,6 +108,7 @@
   font-family: "Arial", serif;
   font-size: 14px;
   line-height: 20px;
+  color: $icon-color;
 
   @media (min-width: $tabletWidth) {
     width: 25%;
